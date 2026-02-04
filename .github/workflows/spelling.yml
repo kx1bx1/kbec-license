@@ -1,0 +1,45 @@
+name: Spelling and Grammar
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  # JOB 1: Spelling Check
+  spelling:
+    name: Check Spelling (CSpell)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run CSpell
+        uses: streetsidesoftware/cspell-action@v6
+        with:
+          # Check all files in the repo
+          files: '**'
+          # If you want to strictly fail on errors, keep this true. 
+          # Set to false if you just want warnings in the logs initially.
+          strict: true 
+          # Optional: Add words here to ignore immediately, or use a cspell.json file
+          inline_custom_dictionary: "KBEC, Copyleft, Boswell, Kane, distro, repo"
+
+  # JOB 2: Style & Inclusivity Check
+  style:
+    name: Check Style (Alex)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Alex.js
+        # Alex checks for insensitive writing and common style issues
+        run: npx alex .
+        continue-on-error: true # Don't break the build for style suggestions, just show them
