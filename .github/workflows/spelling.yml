@@ -1,4 +1,4 @@
-name: Spelling and Grammar
+name: Spelling and grammar
 
 on:
   push:
@@ -8,10 +8,10 @@ on:
 
 jobs:
   spelling:
-    name: Check Spelling (CSpell)
+    name: Check spelling
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Check out Code
         uses: actions/checkout@v4
 
       - name: Run CSpell
@@ -24,17 +24,16 @@ jobs:
           # Note: Custom words are now loaded from cspell.json
 
   style:
-    name: Check Style (Alex)
+    name: Check style
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Run Alex.js
+      - name: Run Alex
         run: npx alex .
-        continue-on-error: true
