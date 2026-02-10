@@ -1,4 +1,4 @@
-> **Note:** KXEC has recently undergone a naming change (KBEC -> KXEC) to obscure the writer's full name, and a minor revision has been released (KXEC-1.1). Note that your rights have not been changed, and you are not required to update your license immediately to the new version.
+> **Note:** KXEC has recently undergone a naming change (KBEC -> KXEC) to obscure the writer's full name, and a minor revision has been released (KXEC-1.1). Note that your rights have not been changed, and you are not required to update your license immediately to the new version. However, KXEC-1.1 removes your patent right to sell or offer to sell.
 
 # Introduction to KXEC
 
@@ -30,4 +30,4 @@ If a user knowingly uses KXEC code for prohibited acts like malware deployment o
 If you breach the terms of the license, your rights terminate. However, you have **30 days** to "cure" the breach after receiving written notice to have your rights reinstated. Additionally, if you initiate patent litigation against any entity alleging that the software infringes a patent, your patent licenses granted under this agreement terminate immediately.
 
 > Read more in the [FAQ](/FAQ.md).
-*Also, please note that if there are any differences between the current license and this README or the FAQ, the license file takes precident. If you want to use this license, it is recommended that you read the full file first.*
+*Also, please note that if there are any differences between the current license and this README or the FAQ, the license file takes precedent. If you want to use this license, it is recommended that you read the full file first.*
