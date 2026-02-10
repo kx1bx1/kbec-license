@@ -11,5 +11,5 @@
 ## Checklist
 
 - [ ] CSpell passes
-- [ ] No deragatory wording
+- [ ] No derogatory wording
 - [ ] CodeRabbit approved
