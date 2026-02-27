@@ -1,6 +1,6 @@
 ---
 name: Hole in FaQ or license
-about: Fix an issue with the FaQ or KBEC license
+about: Fix an issue with the FaQ or KXEC license
 title: 'fix(FaQ/License): title'
 labels: documentation, license
 assignees: kx1xixit
